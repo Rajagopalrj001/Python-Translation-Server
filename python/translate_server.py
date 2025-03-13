@@ -4,8 +4,8 @@ from googletrans import Translator
 import os
 
 app = Flask(__name__)
-# Allow requests from your frontend application
-CORS(app, origins=["http://localhost:5175/","http://127.0.0.1:5500/","http://127.0.0.1:5500/speech-to-text/src/Untitled-1.html"])  # Add your production URL
+
+CORS(app)  # Enable CORS for all routes
 
 translator = Translator()
 
