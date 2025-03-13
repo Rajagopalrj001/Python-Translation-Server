@@ -5,7 +5,7 @@ import os
 
 app = Flask(__name__)
 # Allow requests from your frontend application
-CORS(app, origins=["http://127.0.0.1:5175/","http://127.0.0.1:3000/"])  # Add your production URL
+CORS(app, origins=["http://127.0.0.1:5175/","http://127.0.0.1:5500/"])  # Add your production URL
 
 translator = Translator()
 
